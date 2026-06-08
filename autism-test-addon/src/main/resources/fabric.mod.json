@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "autism-test-addon",
+  "version": "${version}",
+  "name": "AUTISM Test Addon",
+  "description": "Proof-of-concept addon: custom category, test module, and XD command.",
+  "authors": ["cook45"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.testaddon.TestAddonInit"
+    ],
+    "autism": [
+      "com.example.testaddon.TestAddon"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "java": ">=25",
+    "minecraft": "${mc_version}",
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*",
+    "autism": "*"
+  },
+  "custom": {
+    "autism:color": "#00FFAA"
+  }
+}
